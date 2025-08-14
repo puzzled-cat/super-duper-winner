@@ -2,19 +2,143 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>super duper</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IT Support & Setup Services</title>
+  <meta name="description"
+    content="Friendly, jargon-free IT help for home and small business: device setup, home Wi‑Fi, software configuration, safety, backups, and one-to-one training." />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Hello from S3!</h1>
-    <p>This is a static website hosted on AWS S3.</p>
-    <p>Check out the README for more details.</p>
-    <p>deployed via gh actions</p>
-    <script src="main.js"></script>
+  <header>
+    <h1>IT Support &amp; Setup Services</h1>
+    <p>Friendly, jargon-free tech help for your home and small business.</p>
+    <nav aria-label="Primary">
+      <a href="#about">About</a> |
+      <a href="#services">Services</a> |
+      <a href="#why">Why Choose Me</a> |
+      <a href="#faqs">FAQs</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / Intro -->
+    <section id="intro" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Helping You Get the Most from Your Tech</h2>
+      <p>
+        With the ever-growing integration of technology into our workplaces and homes, the excitement of a new device
+        can quickly be dampened by complicated setup, confusing instructions, and unexpected software issues.
+      </p>
+      <p>
+        We’ve all been there — you’ve just treated yourself to a new laptop, games console, or smart TV, counting down
+        the moments until you can enjoy it, only to face a lengthy setup process and unclear manuals. That’s where I
+        step in.
+      </p>
+      <p>
+        I offer friendly, jargon-free IT support to set up, configure, and explain your technology so you can start
+        enjoying it right away.
+      </p>
+    </section>
+
+    <!-- About -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <ul>
+        <li>BSc (Hons) in Computing Systems</li>
+        <li>4 years professional experience as a Software Engineer</li>
+        <li>Lead outreach &amp; CodeCamps to make IT accessible for all (schools &amp; workshops)</li>
+      </ul>
+    </section>
+
+    <!-- Services -->
+    <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Services</h2>
+      <ul>
+        <li>New device setup (computers, tablets, phones, smart TVs, consoles)</li>
+        <li>Home Wi‑Fi &amp; network setup and optimisation</li>
+        <li>Software installation and configuration</li>
+        <li>Cloud storage setup and syncing (e.g., Google Drive, OneDrive, iCloud)</li>
+        <li>Email and account setup</li>
+        <li>Online safety, parental controls, and backup guidance</li>
+        <li>One‑to‑one IT training &amp; FAQs (in person or remote)</li>
+      </ul>
+    </section>
+
+    <!-- Why Choose Me -->
+    <section id="why" aria-labelledby="why-heading">
+      <h2 id="why-heading">Why Choose Me</h2>
+      <ul>
+        <li>Professional expertise backed by a computing degree and industry experience</li>
+        <li>Clear, patient explanations without unnecessary jargon</li>
+        <li>Mobile callouts — I come to you</li>
+        <li>Personalised service tailored to your goals and devices</li>
+      </ul>
+    </section>
+
+    <!-- Simple Process -->
+    <section id="process" aria-labelledby="process-heading">
+      <h2 id="process-heading">How It Works</h2>
+      <ol>
+        <li><strong>Get in touch:</strong> Tell me what you’ve bought or what you need help with.</li>
+        <li><strong>On-site or remote:</strong> I visit you or connect online at a convenient time.</li>
+        <li><strong>Setup &amp; coaching:</strong> I set things up and show you how to use them.</li>
+        <li><strong>Follow-up:</strong> Optional check-in to answer new questions.</li>
+      </ol>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faqs" aria-labelledby="faqs-heading">
+      <h2 id="faqs-heading">FAQs</h2>
+      <details>
+        <summary>Do you repair broken devices?</summary>
+        <p>I focus on setup, configuration, training, and troubleshooting software or connectivity issues. For hardware
+          repairs, I can recommend local repair partners.</p>
+      </details>
+      <details>
+        <summary>Can you help me choose what to buy?</summary>
+        <p>Yes. I can provide simple, unbiased recommendations based on your needs and budget.</p>
+      </details>
+      <details>
+        <summary>Do you offer remote help?</summary>
+        <p>Yes, many issues can be solved over a secure remote session.</p>
+      </details>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Have a question or want to book a visit? Use the form below.</p>
+      <form name="contact" method="post" action="#">
+        <label for="name">Name</label><br />
+        <input id="name" name="name" type="text" required /><br /><br />
+
+        <label for="email">Email</label><br />
+        <input id="email" name="email" type="email" required /><br /><br />
+
+        <label for="message">How can I help?</label><br />
+        <textarea id="message" name="message" rows="6" required></textarea><br /><br />
+
+        <button type="submit">Send</button>
+      </form>
+
+      <p>
+        Prefer email or phone? <br />
+        <strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a><br />
+        <strong>Phone:</strong> <a href="tel:+440000000000">+44 00 0000 0000</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> IT Support &amp; Setup Services. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Minimal enhancement: current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
