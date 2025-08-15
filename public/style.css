@@ -46,6 +46,11 @@ main {
 
 section {
     margin-bottom: 2rem;
+    background-color: rgba(240, 240, 240, 0.7);
+    /* Semi-transparent background for better readability */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 h1,
@@ -84,58 +89,4 @@ form button:hover {
 details summary {
     font-weight: bold;
     cursor: pointer;
-}
-
-.hero {
-    background: url('path_to_your_image.jpg') no-repeat center center/cover;
-    height: 100%;
-    /* Height of hero section */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    /* Larger font size for hero */
-    margin-bottom: 10px;
-}
-
-.about-me {
-    background-color: rgba(0, 0, 0, 0.7);
-    /* Semi-transparent background for better readability */
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.about-me h2 {
-    margin-bottom: 15px;
-    color: #F8F8F8;
-    /* Off-White */
-}
-
-.cards {
-    display: flex;
-    gap: 15px;
-    justify-content: space-around;
-}
-
-.card {
-    background-color: #FFFFFF;
-    position: relative;
-    /* White */
-    padding: 20px;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
-    width: 30%;
-    color: #000000;
-    /* Black */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Light shadow */
 }
