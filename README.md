@@ -15,3 +15,7 @@ A repository containing the code for a static SPA hosted on AWS.
 - Testimonies
 - Quick Guides
 - blog ?
+- example job file:
+    - steps taken to resolve issue
+    - pictures / labelled ports and cables for easy replication
+      
